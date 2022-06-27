@@ -19,6 +19,16 @@
 <p> Tudo que foi utilizado aqui é pensando em programadores iniciantes, que estão começando agora na area da programação.</p>
 <p>O projeto foi separado em alguns arquivos, dentre eles:</p>
 
+<h3>Criação de novos clientes no banco de dados:</h3>
+
+Veja, eu insiro os dados e quando executo o send ele me salva no banco e me retorna um DTO com a resposta do que foi salvo.
+![img.png](imagem%20da%20resposta%20do%20metodo%20POST.png)
+
+
+<h3>Busca por clientes no banco de dados</h3>
+Veja que nas linhas o que nos traz.
+![img.png](imagem%20da%20resposta%20do%20metodo%20GET.png)
+
 >**Controller:**
 > estes são responsaveis pela chamada do front end, ou seja, o controlador e gerente do projeto, é ele que vai dizer onde buscar.
 
@@ -36,3 +46,64 @@
 
 <h3> Coisas que não precisa entender:</h3>
 <p> os transformadores que utilizamos com map no Cliente Service. É algo que precisa ter um pouco mais de conhecimento em Java.</p>
+
+<h3>JSON UTILIZADO NO POSTMAN</h3>
+
+~~~json
+{
+  "info": {
+    "_postman_id": "ec7316f7-a68b-420a-ab80-1cd5fb6984d8",
+    "name": "TransformandoClienteDoBancoParaDTO",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET buscarClientesDoBanco",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/cliente",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "cliente"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST criarUmNovoClienteLevandoEleParaOBancoDeDados",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nome\":\"Messias Cliente\",\r\n    \"cpf\": \"111.444.333.05\",\r\n    \"numeroTelefone\": 3277778888,\r\n    \"idade\":22\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/cliente",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "cliente"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
+

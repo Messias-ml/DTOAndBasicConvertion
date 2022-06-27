@@ -1,0 +1,56 @@
+{
+  "info": {
+    "_postman_id": "ec7316f7-a68b-420a-ab80-1cd5fb6984d8",
+    "name": "TransformandoClienteDoBancoParaDTO",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET buscarClientesDoBanco",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/cliente",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "cliente"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST criarUmNovoClienteLevandoEleParaOBancoDeDados",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nome\":\"Messias Cliente\",\r\n    \"cpf\": \"111.444.333.05\",\r\n    \"numeroTelefone\": 3277778888,\r\n    \"idade\":22\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/cliente",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "cliente"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
