@@ -22,12 +22,13 @@
 <h3>Criação de novos clientes no banco de dados:</h3>
 
 Veja, eu insiro os dados e quando executo o send ele me salva no banco e me retorna um DTO com a resposta do que foi salvo.
-![img.png](imagem%20da%20resposta%20do%20metodo%20POST.png)
+![img.png](respostaMetodoPOST.png)
 
 
 <h3>Busca por clientes no banco de dados</h3>
-Veja que nas linhas o que nos traz.
-![img.png](imagem%20da%20resposta%20do%20metodo%20GET.png)
+Veja que nas linhas o que nos traz. <br/>
+
+![img.png](respostaMetodoGET.png)
 
 >**Controller:**
 > estes são responsaveis pela chamada do front end, ou seja, o controlador e gerente do projeto, é ele que vai dizer onde buscar.
