@@ -1,0 +1,2 @@
+insert into usuario (nom, prf, snh, id) values ('senhor&senhoraTI', 'ADMIN', '$2a$10$aDjd6is0rgp7MGSeXaPNkO72.VGTgZJpiG.8iSiJWEF54Vv1dbP9K', 0);
+insert into cliente (cpf, ide, nom, num_tel, id) values ('123.456.789-11', 20, 'Mariana', 1124456789, 0)

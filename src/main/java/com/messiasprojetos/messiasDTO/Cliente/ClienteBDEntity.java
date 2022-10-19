@@ -7,15 +7,13 @@ import java.time.LocalDateTime;
 
 @Entity
 @Data
+@Table(name = "cliente")
 public class ClienteBDEntity {
 
     @Id
     @Column(name = "id", nullable = false)
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
-
-    @Column(name = "DAT_INC", nullable = false)
-    private final LocalDateTime dataInclusao = LocalDateTime.now();
 
     @Column(name = "NOM", nullable = false)
     private String nome;
